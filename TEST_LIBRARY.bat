@@ -410,8 +410,8 @@ IF NOT EXIST !VSUBTF! (
 )
 
 REM ######################################
-REM CUSTOM LOGIC - If file contains GLBAL skip subtotal printing to common files.
-IF x"!VFS!" EQU x"!VFS:GMPDGLBAL=!" (
+REM CUSTOM LOGIC - If file contains ABCD skip subtotal printing to common files.
+IF x"!VFS!" EQU x"!VFS:ABCD=!" (
 REM ########################################
 
 (ECHO. & ECHO !VFS!) >> !VSUBTF!
